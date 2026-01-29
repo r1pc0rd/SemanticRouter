@@ -1,0 +1,18 @@
+# MCP Semantic Router - Development Dependencies
+
+# Include production dependencies
+-r requirements.txt
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+hypothesis>=6.82.0
+
+# Code quality
+black>=23.7.0
+mypy>=1.4.0
+ruff>=0.0.280
+
+# Type stubs
+types-setuptools

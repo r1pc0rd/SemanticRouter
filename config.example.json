@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-playwright"],
+      "semantic_prefix": "browser",
+      "category_description": "Web browser automation and testing tools for navigating pages, clicking elements, filling forms, and capturing screenshots"
+    },
+    "atlassian": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-atlassian"],
+      "semantic_prefix": "jira",
+      "category_description": "Issue tracking and project management tools for creating, updating, and searching Jira issues and projects"
+    },
+    "filesystem": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/directory"],
+      "category_description": "File system operations for reading, writing, and managing files and directories"
+    }
+  }
+}

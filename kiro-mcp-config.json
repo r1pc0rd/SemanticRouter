@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "semantic-router": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_router",
+        "/path/to/mcp-router/config.json"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "search_tools"
+      ]
+    }
+  }
+}

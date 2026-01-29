@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.atlassian.com/v1/sse"
+      ],
+      "semantic_prefix": "atlassian",
+      "category_description": "Atlassian tools for Jira, Confluence, and other Atlassian products"
+    },
+    "playwright": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "semantic_prefix": "browser",
+      "category_description": "Browser automation tools for web testing and interaction"
+    }
+  },
+  "embedding": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "cache_embeddings": true
+  },
+  "search": {
+    "default_top_k": 10,
+    "similarity_threshold": 0.3
+  }
+}
